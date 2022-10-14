@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">
+      <p>API</p>
+    </div>
+    <div class="nav-links">
+      <a href="https://ulisesafcdev.github.io" target="_blank">About</a>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="header-container">
+      <h2>Request API with xmlHttpRequest</h2>
+      <hr>
+      <p>
+        Implementing request with the object <i>xmlHttpRequest</i> and show data in the web page using API with <a
+          href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder.typicode.com</a>.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <template id="template-note">
+      <div class="card">
+        <div class="card-content">
+          <p id="name" class="card-title"></p>
+          <i class='bx bx-user'></i> <span id="user"></span><br>
+          <i class='bx bx-envelope'></i> <span id="email"></span><br>
+          <i class='bx bx-phone'></i> <span id="phone"></span><br>
+          <i class='bx bx-link'></i> <span id="website"></span><br>
+        </div>
+        <div class="card-action">
+          <span class="blue-text text-darken-3 activator card-title"><i class='bx bx-info-circle'></i></span>
+        </div>
+        <div class="card-reveal">
+          <i class='bx bx-x card-title right'></i>
+          <span class="card-title">Address</span>
+          <br>
+          <i class='bx bx-map-pin'></i> <span id="street"></span><br>
+          <i class='bx bx-building-house'></i> <span id="suite"></span><br>
+          <i class='bx bxs-city'></i> <span id="city"></span><br>
+          <i class='bx bx-envelope-open'></i> <span id="zipcode"></span><br>
+        </div>
+      </div>
+    </template>
+    <section>
+      <blockquote>
+        Using CSS3 and CSS framework Materialize for some styles, also using HTML Templates for use content dynamic with Javascript.
+      </blockquote>
+      <blockquote>
+        I did it with much love for all yours for implement a request to API fake from <a href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder.typicode.com</a> with the object <i>xmlHttpRequest</i>.
+      </blockquote>
+    </section>
+    <section class="section-notes"></section>
+  </main>
+
+  <footer class="page-footer indigo text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-l12">
+          <h6>Created by <a href="https://ulisesafcdev.github.io" target="_blank" class="pink-text text-lighten-5">@ulisesafcdev</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2022 Copyright
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
